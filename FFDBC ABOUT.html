@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>FFDBC ABOUT</title>
+
+	<style>
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 12px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for  buttons */
+#my-button {
+  background-color: skyblue;
+  color: black;
+  padding: 14px 20px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 40%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: gb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 95%; /* Could be more or less, depending on screen size */
+  padding: 12px 50px;
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: indianred;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 80%;
+     background-color: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h6 {
+  color: white;
+}
+
+
+
+h {
+  padding: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+		
+h3 {
+  text-align: center;
+  padding: 50px;
+}
+
+
+p {
+  font-size: 29px;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  }
+
+
+p1 {
+  color: white;
+}
+
+div {
+  text-align: center;
+  padding: 30px;
+}
+
+
+h1 {
+  padding: 0px;
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+p3 {
+  color: green;
+  font-weight: bold;
+}
+
+ul {
+  font-size: 30px;
+  font-size: px;
+}
+h5 {
+  background-color: red;
+  text-align: center;
+  color: white;
+  padding: 39px;
+
+}
+
+h6 {
+  color: ghostwhite;
+  text-align: center;
+  padding: 50px;
+}
+
+li {
+  color: black;
+}
+
+
+.logo {
+      /* This creates a class for the logo image */
+      width: 100px;
+      heght: 100px;
+      margin-top: 1px;
+      margin: px;
+      float: left; /* This aligns the logo image to the left side of the header */
+    }
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('ffdbc about body background.jpg');
+  background-size: 90%;
+ 
+  
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+}
+
+
+
+.top-container {
+  background-color: skyblue;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+/**** STYLE HEADER  ****/
+/* Style the header with a grey background and some padding */
+
+ .header {
+  overflow: hidden;
+  background-color: skyblue;
+  padding: 0px 0px;
+}
+
+/* Style the header links */
+.header a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: px;
+  border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header {
+  float: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+/** boxes **/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-image: url(https://th.bing.com/th/id/OIP.N07BZ9-vJaGrd88rNt-kDQHaEK?pid=ImgDet&rs=1);
+
+
+  /* Add the blur effect */
+  /** remove**/
+  filer: blur(4px);
+  -webkit-filer: blur(8px);  /**remove**/
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+
+
+.flex-container .box {
+  width: 40%;
+  margin: 30px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+
+
+
+ /* sSOCIALS*/
+.fa {
+  padding: 40px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+
+/** contact page**/
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: darkgray;
+}
+ 
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+ 
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+	</style>
+
+
+
+
+</head>
+<body style="background-color:powderblue;">
+
+<div class="top-container">
+  <h>FUTURE'S FINANCE, DATA&nbsp; AND BUSINESS CONSULTANCY</h>
+  <P>Excellence in service, innovation</p>
+  
+</div>
+
+<div class="header" id="myHeader">
+  <!-- This is the header section where you can add your logo and company name -->
+    <img src="ffdbc logo.jpeg" alt="My company logo" class="logo" /> <!-- This adds the logo image with the class "logo" -->
+   <div class="header">
+   <a  href="FFDBC HOME.html"> FFDBC Home</a>
+    <a href="FFDBC ABOUT.html">About</a>
+    <a href="FFDBC SERVICES.html">Services</a>
+    <a href="#Contact Us">Contact Us</a>
+
+    
+
+
+ <a><button id="my-button" onclick="document.getElementById('my-popup').style.display='block'" style="width:auto;">Opt In</button></a>
+
+<div id="my-popup" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('my-popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Profile-Avatar-PNG.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <br><label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <br><label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <br><button type="submit">Opt In</button><br>
+
+      <br><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+       <p>By Opting In you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+
+    </div>
+
+    <div class="container2" style="background-color: none">
+      <button type="button" onclick="document.getElementById('my-popup').style.display='none'"class="cancelbtn">Cancel</button><br>
+
+      <br><span class="psw"> <a href="#">forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+      <a href="HOME WEB SITE.html">Blogs</a>
+      
+ 
+      <a href="PETER HARO'S PORTFOLIO.html">P. Haro's Portfolio</a>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('my-popup');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></div></div></P>
+
+
+
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<h1>ABOUT US</h1>
+
+
+<div class="flex-container"> 
+<div class="box "><h3><p1>OUR<br> MISSION:</p1></h3>
+<p1>Our mission is to provide our clients with the best possible services in crypto and foreign exchange trading, data research and analysis, finance and business consultancy, civil engineering services and real estate investments and management. We strive to achieve excellence in everything we do, from the quality of our work to the satisfaction of our customers. We value integrity, professionalism, transparency, and accountability in our operations. We seek to establish long-term relationships with our clients based on trust, respect, and mutual benefit. We are committed to continuous learning and improvement, as well as to fostering a culture of innovation and creativity in our organization.</p1></div>
+
+
+<div class="box"><h3><p1>OUR<br> VISION:</p1></h3>
+<p1>Our vision is to become a global leader in the fields of crypto and foreign exchange trading, data research and analysis, finance and business consultancy, civil engineering services and real estate investments and management. We aspire to be recognized as a trusted and reputable partner by our clients, as well as a responsible and ethical corporate citizen by the society. We envision a world where our services can help individuals, businesses, and communities achieve their goals and aspirations, as well as contribute to the advancement of humanity.</p1></div>
+</div>
+
+<hr>
+
+
+<h6>
+<p>We are a start-up company that offers a variety of services in the fields of web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering  services and real estate investment  and management.<br>  &nbsp;  <p> We aim to help our clients achieve their goals and grow their businesses by providing them with innovative and customized solutions.<br> In this content, we will introduce ourselves, our services, our team, our values, and our vision.</p>
+
+<p><br><strong>Who We Are</strong><br>
+
+We are a group of passionate and professional experts who have diverse backgrounds and expertise in web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management. We have been working in these fields for several years and have gained valuable knowledge and experience that we want to share with our clients.<br>
+
+We started our company in 2023 with the vision of becoming a leading provider of web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management services in the market. We saw the potential and demand for these services in the digital age and decided to combine our skills and resources to create a one-stop solution for our clients.<br>
+
+We are based in Nairobi, Kenya, but we serve clients from all over the world. We use the latest technologies and tools to deliver high-quality results and exceed our clients' expectations. We are always ready to learn new skills and take on new challenges.</p>
+
+
+
+<p><br><strong>How We Do It</strong><br>
+
+We follow a simple yet effective process to deliver our services to our clients. Here are the steps that we follow:<br>
+<p3>(i) Understand:</p3> We listen to your needs and requirements and understand your goals
+and expectations. We conduct a thorough research on your industry,
+market,
+competitors,
+and target audience.<br>
+<p3>(ii) Plan:</p3> We create a detailed plan for your project that outlines the scope,
+timeline,
+budget,
+and deliverables. We also assign a dedicated project manager who will be your
+point of contact throughout the project.<br>
+<p3>(iii) Execute:</p3> We implement the plan using the best practices
+and standards
+in web development,
+finance,
+data
+and business consultancy management,
+crypto,
+foreign exchange, civil engineering services and real estate investments and management.
+We also communicate with you regularly
+and update you on the progress
+and feedback.<br>
+<p3>(iv) Deliver:</p3> We deliver the final product or service that meets or exceeds your expectations.
+We also provide training,
+documentation,
+and support
+to ensure your satisfaction
+and success.<br>
+<p3>(v) Evaluate:</p3> We evaluate the results
+and outcomes
+of the project
+and measure its impact
+and value.
+We also collect your feedback
+and suggestions
+to improve our services
+and relationship.</p>
+
+<p><br><strong>Who We Work With</strong><br>
+
+We work with clients from various industries
+and sectors
+who need web development,
+finance,
+data
+and business consultancy management,
+crypto,
+foreign exchange, civil engineering services and real estate investments and management.
+Some of our clients include:<br>
+
+<p3>(i) Small businesses:</p3> We help small businesses establish their online presence,
+manage their finances,
+use data to make better decisions,
+explore new opportunities in crypto
+and foreign exchange markets,
+and invest in real estate properties.<br>
+<p3>(ii) Medium-sized businesses:</p3> We help medium-sized businesses improve their website design
+and functionality,
+optimize their financial performance,
+enhance their data
+and business consultancy management capabilities,
+diversify their portfolio in crypto
+and foreign exchange markets,
+and expand their real estate assets.<br>
+<p3>(iii) Large corporations:</p3> We help large corporations redesign their website
+and systems,
+streamline their financial processes,
+leverage their data
+and business consultancy management resources,
+integrate crypto
+and foreign exchange solutions, achieve their civil engineering goals
+and manage their real estate portfolio.<br></p>
+<hr>
+  <P><a href="#top">GO TO TOP</a></P>
+
+
+
+<p><br><strong>Why Choose Us</strong><br>
+We are your trusted partner
+who cares about your success
+and growth.
+Here are some of the reasons why you should choose us:<br><ul>
+
+-<li> We have a team of skilled and experienced professionals who have diverse backgrounds and expertise in web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management. We have the knowledge and experience to handle any project, no matter how complex or challenging it is.</li><br>
+- <li>We offer a variety of services in the fields of web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management. We can provide you with a one-stop solution for all your needs, saving you time, money, and hassle.</li><br>
+-<li> We use the latest technologies and tools to deliver high-quality results and exceed your expectations. We are always up to date with the trends and innovations in web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management. We also use the best practices and standards to ensure your security, privacy, and compliance.</li><br>
+-<li> We follow a simple yet effective process to deliver our services to our clients. We listen to your needs and requirements, create a detailed plan for your project, implement the plan using the best practices and standards, deliver the final product or service that meets or exceeds your expectations, and evaluate the results and outcomes of the project. We also communicate with you regularly and update you on the progress and feedback.</li><br>
+-<li> We offer competitive prices and flexible payment options for our services. We understand that every client has a different budget and preference. That's why we offer affordable prices and various payment options for our services. You can choose to pay per project, per hour, per month, or per year. You can also choose to pay in cash, credit card, bank transfer, or crypto.</li><br>
+-<li> We value our clients and their satisfaction. We are not just a service provider, but a partner who cares about your success and growth. We are always ready to listen to your feedback and suggestions and improve our services and relationship. We are also always available to answer your questions and provide you with support.</li></p>
+
+<p><br><strong>What We Believe In</strong><br>
+
+We believe in our vision, mission, values, and goals. Here are some of the things that we believe in:<br>
+<ul>
+-<li><p3> Vision:</p3> Our vision is to become a leading provider of web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management services in the market.</li><br>
+-<li><p3> Mission:</p3>Our mission is to help our clients achieve their goals and grow their businesses by providing them with innovative and customized solutions in the fields of web development, finance, data and business consultancy management, crypto, foreign exchange, civil engineering services and real estate investments and management.</li><br>
+-<li><p3> Values:</p3> Our values are excellence, integrity, innovation, collaboration, and customer satisfaction. We strive to deliver high-quality results
+and exceed our clients' expectations. We act with honesty,
+transparency,
+and accountability. We embrace change
+and creativity. We work as a team
+and respect each other. We value our clients
+and their satisfaction.</li><br>
+-<li><p3> Goals:</p3> Our goals are to expand our services
+and reach more clients,
+to improve our skills
+and knowledge,
+to increase our revenue
+and profitability,
+to enhance our reputation
+and brand awareness,
+and to contribute to social
+and environmental causes.</li></p>
+
+<p><br><strong>Contact Us</strong><br>
+If you are interested in working with us or learning more about us,
+please contact us today.<br>
+You can reach us by phone,
+email,
+or social media.<br>
+You can also visit our website
+or fill out our Hire Us form.<br>
+
+We look forward to hearing from you
+and working with you.<br>
+
+Thank you for reading this content.</p></p>
+
+  <hr>
+  <p><a href="#top">GO TO TOP</a></P></h6>
+
+
+
+
+
+
+
+
+
+
+
+<h3>FOLLOWS US ON SOCIAL MEDIA<br>
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+</h3>
+
+
+<h21>
+<div class="contact">
+  <div style="text-align:center">
+    <div id="Contact Us">
+
+<!-- banner section  -->
+    <section class="banner">
+        <img src=
+"CONTACT US BANNERimage.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        We are here to answer any questions you may have.
+    </section>
+ 
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h3>Your Details</h3>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section></div></div></div>
+ 
+
+ <!-- Company contact info -->
+    <section class="contact-info">
+        <h4>Contact Information</h4>
+        <address>
+            FFDBC<br>
+            Nairobi, 00100<br>
+            Phone: +254-79347-4570</a><br>
+            Email: salesatffdbc@gmail.com</a>
+            <br></address></section></h21>
+          
+
+<h5><p> We aim to help our clients achieve their goals and grow their businesses by providing them with innovative and customized solutions. We have a team of skilled and experienced professionals who are passionate about what they do and strive to deliver high-quality results and exceed our clients’ expectations. We are your one-stop solution for all your needs. Contact us today to find out how we can help you achieve your goals.</p><br>
+<p>&copy; 2023 FFDBC. 
+<br>All rights reserved</p></h5>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

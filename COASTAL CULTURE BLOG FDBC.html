@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+
+body {
+  text-align: center;
+}
+
+h {
+  padding: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 20px;
+  padding: 30px;
+}
+
+
+
+h3 {
+  color: black;
+  font-size: 80PX;
+}
+
+p1 {
+  color: blue;
+  font-size: 30px;
+   text-align: center;}
+
+
+h1 {
+  padding: 0px;
+  color: darkgoldenrod;
+  text-align: center;
+}   
+
+h2 {
+
+  	color: black;
+  	font-size: 50px;
+  	top: 0;}
+
+
+h6 {
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+  padding: px;
+  margin: 0px;
+}
+
+
+
+
+h7 {
+  font-style: italic;
+  color: red;
+  font-size: 20px;
+}
+
+
+
+div {
+  text-align: center;
+  padding: 30px;
+}
+
+
+body {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
+.logo {
+      /* This creates a class for the logo image */
+      width: 100px;
+      height: 100px;
+      margin-top: 1px;
+      margin: px;
+      float: left; /* This aligns the logo image to the left side of the header */
+    }
+
+
+
+.top-container {
+  background-color: skyblue;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 12px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for  buttons */
+#my-button {
+  background-color: skyblue;
+  color: black;
+  padding: 14px 20px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 40%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: gb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 95%; /* Could be more or less, depending on screen size */
+  padding: 12px 50px;
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: indianred;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 80%;
+     background-color: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/**** STYLE HEADER  ****/
+/* Style the header with a grey background and some padding */
+
+ .header {
+  overflow: hidden;
+  background-color: skyblue;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: px;
+  border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header {
+  float: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+/** boxes **/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-image: url(https://th.bing.com/th/id/R.a109e0e393c6f4eabe1a3978af37a638?rik=u5QQylU4d3yMWg&pid=ImgRaw&r=0);
+
+
+  /* Add the blur effect */
+  /** remove**/
+  filer: blur(4px);
+  -webkit-filer: blur(8px);  /**remove**/
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+
+.flex-container .box {
+  width: 10%;
+  margin: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+
+
+
+ /** images side to side**/
+ /* Two image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+div {
+    text-align: center;
+}
+
+
+/** slide show**/
+[data-component="slideshow"] .slide {
+  display: none;
+  text-align: center;
+  width: 80%;
+
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
+.container-slideshow-example {
+  width: 80%;
+  max-width: 1000px;
+  max-height: 100px;
+
+}
+
+
+
+
+/** contact page**/
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: darkgray;
+}
+ 
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+ 
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ 
+/* Footer styles */
+p20 {
+    padding: 20px;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+}
+
+
+
+
+
+
+	</style>
+</head>
+<body style="background-color:lightgray;">
+
+<div class="top-container1">
+  <h>FUTURE'S FINANCE, DATA&nbsp; AND BUSINESS CONSULTANCY</h>
+  <P>Excellence in service, innovation</p>
+  
+</div>
+
+<div class="header" id="myHeader">
+  <!-- This is the header section where you can add your logo and company name -->
+    <img src="https://th.bing.com/th/id/OIG.PtHbC0Ma5X48QbkSixjK?pid=ImgGn" alt="My company logo" class="logo" /> <!-- This adds the logo image with the class "logo" -->
+   <div class="header">
+   <a  href="FFDBC HOME.html"> FFDBC Home</a>
+    <a href="FFDBC ABOUT.html">About Us</a>
+    <a href="FFDBC SERVICES.html">Services</a>
+   <a href="#Contact Us">Contact Us</a>
+
+
+
+    <a><button id="my-button" onclick="document.getElementById('my-popup').style.display='block'" style="width:auto;">Opt In</button></a>
+
+<div id="my-popup" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('my-popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <br><label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <br><label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <br><button type="submit">Opt In</button><br>
+
+      <br><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+       <p>By Opting In you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+
+    </div>
+
+    <div class="container2" style="background-color: none">
+      <button type="button" onclick="document.getElementById('my-popup').style.display='none'"class="cancelbtn">Cancel</button><br>
+
+      <br><span class="psw"> <a href="#">forgot password?</a></span>
+    </div>
+  </form>
+</div>
+     <a href="HOME WEB SITE.html">Blogs</a>
+
+
+     <a href="PETER HARO'S PORTFOLIO.html">P. Haro's Portfolio</a>
+
+<script>
+// Get the modal
+var modal = document.getElementById('my-popup');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></div></div></P></div></body></html>
+
+
+
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+<div class="flex-container"> 
+<div class="box "><h2>The Coast of Kenya: A Region of Diversity, Richness, and Resistance</h2>
+</div>
+</div>
+
+    <h7>The coast of Kenya is a region of cultural and historical diversity and richness. The people of the coast have a long and complex history that spans from the prehistoric times to the present day. The coast has been influenced by various waves of migration, trade, and colonization by different peoples and cultures, such as the Bantu, the Arabs, the Persians, the Portuguese, the British, and others. The coast has also been a site of resistance, struggle, and adaptation to various political and social changes. The people of the coast have developed a unique identity that is shaped by their interaction with their environment, their neighbors, and their visitors.<br></h7>
+
+  
+
+
+
+
+
+
+
+<div id="slideshow-example" data-component="slideshow">
+    <div role="list">
+      <div class="slide">
+        <img src="https://blog.sevenponds.com/wp-content/uploads/2015/11/PIX3.jpg" alt="" 
+        style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://th.bing.com/th/id/R.be71c6f9a737faf665af5acf9b0a6ebe?rik=sN6It5RSlhDOBA&pid=ImgRaw&r=0" alt=""  style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://madahotels.com/wp-content/uploads/2022/03/KILIFI-BAY-BEACH-RESORT-KILIFI-18.jpg" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://blog.sevenponds.com/wp-content/uploads/2015/11/MekatililiWaMenza.jpg" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://img.ev.mu/images/articles/960x/923558.jpg" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://th.bing.com/th/id/OIP.zIpN-gZxMA_GxQlON3D2LgHaFB?pid=ImgDet&rs=1" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://th.bing.com/th/id/R.843ad8d0f343c41e6d73a04c1b900455?rik=Oxv%2bfiZ6kMcHLw&pid=ImgRaw&r=0&sres=1&sresct=1" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://th.bing.com/th/id/OIP.hAnL4XgB7dJB0q3QnOThvwHaE6?pid=ImgDet&rs=1" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://th.bing.com/th/id/OIP.xNC8qO8WAe6MapWKMkL34gHaEa?pid=ImgDet&rs=1" alt="" style="width:90%" height=auto>
+      </div>
+      <div class="slide">
+        <img src="https://lh5.googleusercontent.com/proxy/i4CrM24Q-0kzcXSCTBtEOfkzi9lAtDS1cnEgC1jP4KmSNy7l8MANQjc5st8gNNS1pq7KmY_HvG833RQ0mHT_KYC4DE1aMw1H9AJeIP8uQ4moqS3mXgFlhYNrlDF9CwWALAM3nAggxFGmI_yuQVgBPZMfTkRb=s0-d" alt="" style="width:90%" height=auto>
+      </div><div class="slide">
+        <img src="https://th.bing.com/th/id/R.9eda1536af5686d5171ff914005c304d?rik=uuBdPd3AbmOoMw&pid=ImgRaw&r=0" alt="" style="width:90%" height=auto>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+  var index = 0, time = 1300 ;
+  slides[index].classList.add('active');
+
+  setInterval( () => {
+    slides[index].classList.remove('active');
+    
+    index++;
+    if (index === slides.length) index = 0;
+
+    slides[index].classList.add('active');
+
+  }, time);
+} 
+</script>
+<hr>
+
+
+<P1>A legacy of Bantu-Arab interaction</p1>
+    <p>One of the most distinctive features of the coast is the Swahili culture, which emerged from the fusion of Bantu and Arab elements. The Swahili language is a Bantu language that has borrowed extensively from Arabic and other languages. The Swahili culture is characterized by its urbanism, its maritime orientation, its Islamic religion, its cosmopolitanism, and its artistic expression. The Swahili people built stone towns along the coast, such as Mombasa, Lamu, Malindi, and Kilwa, which became centers of trade and commerce with the interior of Africa, the Arabian Peninsula, India, China, and Europe. The Swahili people also developed a rich literary tradition that includes poetry, prose, chronicles, and oral narratives. The Swahili culture has influenced and been influenced by other coastal cultures, such as the Mijikenda, the Pokomo, the Taita, and the Taveta.</p>
+
+<hr>
+<p>Another important aspect of the coast is its history of colonialism and resistance. The coast was first visited by the Portuguese in the late 15th century, who sought to control the lucrative Indian Ocean trade. The Portuguese faced fierce opposition from the Swahili states and their allies, such as the Omani Arabs. </p>
+<br>
+
+
+   <div class="row">
+    <div class="column">
+    <img src="https://joshman.com/wp-content/uploads/2019/11/49010069652_6a256c8504_c-768x512.jpg" style="width:87%" height="310px">
+      </div>
+      <div class="column">
+    <img src="https://joshman.com/wp-content/uploads/2019/11/49009841416_673fd2968c_c-768x512.jpg" alt="Mountains" style="width:87%" height="310px">
+       </div>
+      </div>
+      <br>
+
+
+
+
+<p>The Portuguese were eventually expelled from the coast by the Omani sultanate in the late 17th century. The Omani sultanate established its dominance over the coast and introduced plantation agriculture based on slave labor. The Omani sultanate also faced resistance from some coastal communities, such as the Mazrui clan in Mombasa and the Galla (Oromo) in Lamu. The coast was later divided into British and German spheres of influence in the late 19th century. The British established the East Africa Protectorate in 1895, which became known as Kenya Colony in 1920. The British imposed their rule over the coast through treaties, taxes, land alienation, and repression. The coastal people resisted British colonialism through various forms of protest and rebellion, such as the Mau Mau uprising in 1952-1960. The coast was also a site of nationalist movements that demanded independence from Britain. The coast became part of independent Kenya in 1963.</p><hr>
+
+
+<div class="row">
+    <div class="column">
+    <img src="https://th.bing.com/th/id/OIP.4IjXZl_S5bHJRB_-MO7yGwHaE7?pid=ImgDet&rs=1" alt="F" style="width:87%" height="310px">
+      </div>
+      <div class="column">
+    <img src="https://th.bing.com/th/id/OIP.jfEraT4C-29p34Vq7c6h9AHaGe?pid=ImgDet&rs=1" alt="" style="width:87%" height="310px">
+       </div>
+      </div><br>
+      <hr>
+
+<p>The coast has also experienced various social and economic changes in the post-colonial period. The coast has witnessed rapid urbanization, population growth, migration, tourism development, environmental degradation, political marginalization, ethnic conflicts, religious radicalization, and cultural revival. The coastal people have also participated in various struggles for democracy, human rights, development, and autonomy within Kenya.</p>
+<br>
+
+<div class="row">
+      <div class="column">
+    <img src="https://i1.wp.com/nairobifashionhub.co.ke/wp-content/uploads/2018/01/Nairobi-Fashion-Hub-African-queen-mekatelili_1-3.jpg?fit=2048%2C1457&ssl=1" alt="M" style="width:87%" height="310px">
+       </div>
+       <div class="column">
+      <img src="https://th.bing.com/th/id/R.efe93435b9df8302c22dcf9d662b3e50?rik=fPKHqxJ4U2sKlA&pid=ImgRaw&r=0" alt="Mountains" style="width:87%" height="310px">
+       </div></div><br> 
+
+
+
+<br><p> The coast has also maintained its cultural diversity and vibrancy through various forms of expression, such as music, dance, art, cuisine, fashion, and festivals.</p>
+
+<div class="row">
+      <div class="column">
+    <img src="https://th.bing.com/th/id/OIP.mp0GpHsIo8JGIMF_6XzNkwHaEK?pid=ImgDet&rs=1" alt="" style="width:87%" height="310px">
+       </div>
+        <div class="column">
+    <img src="https://th.bing.com/th/id/OIP.WY3Gtlw1W5in-7hk6kDWsQAAAA?pid=ImgDet&rs=1" alt="" style="width:87%" height="310px">
+       </div>
+      </div><br>
+<hr>
+
+
+
+      
+
+
+
+
+
+<p>The culture and history of the people of the coast of Kenya is a fascinating topic that deserves more attention and appreciation. The coast is a region that has contributed significantly to the history and identity of Kenya as a nation. The coast is also a region that faces many challenges and opportunities in the present day. The coast is a region that deserves respect and recognition for its past achievements and its future aspirations.</p>
+
+
+
+<hr>
+
+
+<p><a href="#top">Go to top</a></p>
+
+
+
+
+   <div class="row">
+    <div class="column">
+    <img src="https://www.wildlifekenyasafari.com/wp-content/uploads/2022/07/259912948.jpg" alt="" style="width:87%" height="310px" >
+      </div>
+      <div class="column">
+    <img src="https://sncdn.com/imagecache/db/id/2683723/2047787a.jpg" alt=""  style="width:87%" height="310px">
+       </div>
+      </div><br>
+
+
+
+<hr>
+
+<div class="contact">
+  <div style="text-align:center">
+    <div id="Contact Us">
+
+<!-- banner section  -->
+    <section class="banner">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        We are here to answer any questions you may have.
+    </section></div></div></div>
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h3>Your Details</h3>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+ 
+
+<h6>
+ <div class="w3-black w3-center w3-padding-24">Powered by FFDBC &copy; all rights reserved</a></div>
+ <div class="w3-black w3-center w3-padding-24">Developed by<a href="https://www.linkedin.com/in/peter-haro-23a627230" title="peter haro" target="_blank" class="w3-hover-opacity"> Peter Haro</a></div>
+</h6>
+
+
+</div></P1></body>
+</html>

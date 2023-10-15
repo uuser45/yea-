@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" 
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+h {
+  padding: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 20px;
+  padding: 30px;
+}
+
+
+
+h3 {
+  color: black;
+  font-size: 80PX;
+}
+
+p1 {
+  color: blue;
+  font-size: 30px;
+   text-align: center;}
+
+p3 {
+  color: blue;
+  font-size: 30px;
+  padding: 40px;
+}
+
+
+h1 {
+  padding: 0px;
+  color: darkgoldenrod;
+  text-align: center;
+}   
+
+h2 {
+
+    color: black;
+    font-size: 50px;
+    top: 0;}
+
+
+h6 {
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+  padding: px;
+  margin: 0px;
+}
+
+
+
+
+
+
+div {
+  text-align: center;
+  padding: 30px;
+}
+
+
+body {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
+.logo {
+      /* This creates a class for the logo image */
+      width: 100px;
+      height: 100px;
+      margin-top: 1px;
+      margin: px;
+      float: left; /* This aligns the logo image to the left side of the header */
+    }
+
+
+
+.top-container {
+  background-color: skyblue;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 12px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for  buttons */
+#my-button {
+  background-color: skyblue;
+  color: black;
+  padding: 14px 20px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 40%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: gb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 95%; /* Could be more or less, depending on screen size */
+  padding: 12px 50px;
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: indianred;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 80%;
+     background-color: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**** STYLE HEADER  ****/
+/* Style the header with a grey background and some padding */
+
+ .header {
+  overflow: hidden;
+  background-color: skyblue;
+  padding: 0px 0px;
+}
+
+/* Style the header links */
+.header a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: px;
+  border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header {
+  float: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** contact page**/
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: darkgray;
+}
+ 
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+ 
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ 
+/* Footer styles */
+p20 {
+    padding: 20px;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+}
+
+
+
+
+
+</style>
+</head>
+<body style="background-color:lightgray;">
+
+<div class="top-container1">
+  <h>FUTURE'S FINANCE, DATA&nbsp; AND BUSINESS CONSULTANCY</h>
+  <P>Excellence in service, innovation</p>
+  
+</div>
+
+<div class="header" id="myHeader">
+  <!-- This is the header section where you can add your logo and company name -->
+    <img src="ffdbc logo.jpeg" alt="My company logo" class="logo" /> <!-- This adds the logo image with the class "logo" -->
+   <div class="header">
+   <a  href="FFDBC HOME.html"> FFDBC Home</a>
+    <a href="FFDBC ABOUT.html">About Us</a>
+    <a href="FFDBC SERVICES.html">Services</a>
+   <a href="#Contact Us">Contact Us</a>
+
+
+
+    <a><button id="my-button" onclick="document.getElementById('my-popup').style.display='block'" style="width:auto;">Opt In</button></a>
+
+<div id="my-popup" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('my-popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Profile-Avatar-PNG.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <br><label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <br><label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <br><button type="submit">Opt In</button><br>
+
+      <br><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+       <p>By Opting In you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+
+    </div>
+
+    <div class="container2" style="background-color: none">
+      <button type="button" onclick="document.getElementById('my-popup').style.display='none'"class="cancelbtn">Cancel</button><br>
+
+      <br><span class="psw"> <a href="#">forgot password?</a></span>
+    </div>
+  </form>
+</div>
+     <a href="HOME WEB SITE.html">Blogs</a>
+
+
+     <a href="PETER HARO'S PORTFOLIO.html">P. Haro's Portfolio</a>
+
+<script>
+// Get the modal
+var modal = document.getElementById('my-popup');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></div></div></P></div></body></html>
+
+
+
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+<img src="Blog make money online- header  jpeg.jpeg" height=auto style="display: block; margin: auto;" width= 90%>
+
+
+
+<h2>How to Make Online Money from Home in 2023</h2>
+
+<p>Are you looking for ways to make money online from home? Whether you want to supplement your income, quit your 9-to-5 job, 3or pursue your passion, there are plenty of opportunities to earn money online in 2023.
+
+In this article, we will share 20+ legit ways to make money online from home, with examples, tips, and resources to help you get started. Some of these methods are easy and fast, while others require more skills and time. But all of them have the potential to generate a steady income stream for you. Let me show you how:</p>
+
+<hr>
+<div id="1. Start a dropshipping business">
+<p3>1. Start a dropshipping business</p3>
+<p>Dropshipping is a business model where you sell a product to a customer, but the supplier handles the storage, packaging, and shipping on your behalf. You can dropship through your own ecommerce store—just install a dropshipping app and you’ll gain access to dozens of suppliers across various product categories.<br>
+<br> Some dropshipping apps allow you to hand-pick your product images, edit item descriptions, and give your business a personalized vibe so people will love shopping with you.</p>
+  advert to start selling with shopify></div>
+
+<img src="Blog make money online - droppshipping model.jpeg " height=auto style="display: block; margin: auto;" width= 60%>
+
+<hr>
+<div id="2. Try print on Demand">
+<p3>2. Try print on Demand</p3>
+<p>Print on demand (POD) is another way to sell products online without having to handle inventory or shipping. POD allows you to create custom designs for products such as t-shirts, hoodies, mugs, posters, stickers, and more, and sell them on platforms like @@Amazon@@, @@Etsy@@, or your own website. When a customer orders a product with your design, a POD service provider prints it on demand and ships it directly to the customer. You earn a royalty or commission for each sale.<br>
+
+ <br>POD is a great way to make money online from home if you have a flair for design and creativity. You can use tools like Canva or Photoshop to create your own designs, or hire a freelance designer to do it for you. You can also use platforms like @@Printful or @@Printify to connect your store with POD service providers.<br>
+
+<br>To succeed in POD, you need to create original and attractive designs that appeal to your target audience, research the best keywords and tags for your products, optimize your product listings for SEO and conversions, and promote your products using various @@link to" marketing strategies".@@</p></div>
+
+
+<img src="Blog make money online- PRINT ON DEMAND.jpg" height=auto style="display: block; margin: auto;" width= 60%>
+
+
+<hr>
+<div id="3. Blogging">
+<p3>3. Blogging</p3>
+<P> Blogging is one of the oldest and most effective ways to make money online. You can create a blog on any topic you are passionate about, such as @@travel, @@fashion, health, or personal finance. You can monetize your blog by displaying ads, selling products or services, or promoting affiliate offers.<br>
+<br> To succeed as a blogger, you need to create high-quality and engaging content, drive traffic to your blog, and build trust with your audience.</P>
+</div><hr>
+
+<div id="4. E-commerce">
+<p3>4. E-comerce</p3>
+<p>E-commerce is the process of selling physical or digital products online. You can create your own online store using platforms like @@Shopify, 
+@@WooCommerce, or @@BigCommerce, or you can sell on marketplaces like @2Amazon, @@eBay, or @@Etsy. You can source your products from wholesalers, dropshippers, or manufacturers, or you can create your own products.<br>
+<br> To succeed as an e-commerce seller, you need to find a profitable niche, research your competitors, optimize your product listings, and provide excellent customer service.</p></div>
+
+<div id="5. Freelancing">
+<p3>5. Freelancing</p3><br>
+
+<img src="Blog make money online -FREELANCE.jpeg" height=auto style="display: block; margin: auto;" width= 60%><br>
+<p> Freelancing is the act of offering your skills or services to clients online. You can freelance as a writer, designer, developer, marketer, translator, virtual assistant, or any other skill you have. You can find freelance gigs on platforms like @@Upwork, @@Fiverr, or @@Freelancer.com, or you can pitch directly to clients through email or social media.<br>
+<br> To succeed as a freelancer, you need to have a portfolio of your work, set your rates and terms, communicate effectively with your clients, and deliver quality work on time.</p></div>
+
+
+<p><a href="#top">Go to top</a></p>
+
+
+
+<div id="6. Online Courses">
+<p3>6. Online Courses</p3>
+
+<br>
+<img src="Blog make money online-ONLINE COURSES.jpeg" height=auto style="display: block; margin: auto;" width= 60%><br>
+
+<p> Online courses are one of the most lucrative ways to make money online. You can create and sell online courses on any topic you are knowledgeable about, such as photography, coding, yoga, or guitar. You can host your online courses on platforms like @@Coursera @@Udemy, Skillshare, or Teachable, or you can create your own website using WordPress or Kajabi.<br>
+<br> To succeed as an online course creator, you need to identify your target audience, create a curriculum and content that solves their problems, market and launch your course, and provide support and feedback to your students.</p></div>
+
+<div id="7. Podcasting">
+  <p3>7. Podcasting</p3>
+  <p>Podcasting is the art of creating and distributing audio content online. You can create a podcast on any topic you are interested in, such as sports, comedy, business, or history.<br>
+  <br> You can monetize your podcast by selling sponsorships or ads, creating premium content or memberships, or soliciting donations from your listeners. To succeed as a podcaster, you need to have a niche and a unique voice, choose a podcast format and hosting platform, record and edit your episodes, and grow and engage with your audience.</p></div>
+
+<div id="8. Start a Youtube Channel">
+  <p3>8. Start a Youtube Channel</p3>
+
+  <img src="Blog make money online- YOUTUBE CHANNEL..jpeg" height=auto style="display: block; margin: auto;" width= 60%><br>
+
+  <p>If others are profiting from YouTube, you can too. Take for instance, Jimmy Donaldson, also known as MrBeast. His outlandish stunts earned him $54 million from YouTube in 2022. Jake Paul is another successful YouTuber, raking in $45 million from high-energy pranks and boxing content. His YouTube fame even helped him generate income beyond ad revenue.<br>
+
+<br>Your YouTube channel should focus on a single niche so you can build a strong, loyal audience. For example, you can create makeup tutorials, stream video games, review products, teach skills, create prank videos, or anything else you think there’d be an audience for.<br>
+
+<br>Enticing headlines and keyword-optimized descriptions can draw viewers to your videos. Once you hit the 1,000-subscriber mark, you become eligible to earn advertising revenues through running ads on your content.</p></div>
+
+<div id="9. Offer virtual local tours">
+  <P3>9. Offer virtual local tours</P3>
+  <p>How well do you know your town , city or a local site? Share it with people by offerring virtual tours of the place. This way tourists can explore new places without leaving their homes</p>
+  <br>
+
+
+<img src="Blog make money online-VIRTUAL TOURS.jpeg" height=auto style="display: block; margin: auto;" width= 60%><br>
+</div>
+
+<div id="10. Resell Products">
+  <p3>10. Resell Products</p3>
+  <p>You can become a  products reseller and earn money without creatin any products. You can buy vintage or collectible items and resell them at a profit. Start by finding brands to resell on wholesale platforms like AliExpress, Jumia. Then set up an online platform to sell your produts.</p></div><br>
+
+<hr>
+<p><a href="#top">Got to Top</a></p>
+<hr>
+
+
+
+
+<div id="11. Sell greeting cards">
+  <p3>11. sell greeting cards</p3>
+  <p>If you have a knack for picking out the perfect greeting card for different occasions, this might be an easy way to make money online. It’s not recommended that you market your services to everyone and anyone—it’s not a smart way to do business. Instead, design or source greeting cards that appeal to a certain segment of the population. <br>
+
+
+<img src="Blog make money online-SELL GREEETING CARDSjpg.jpg" height=auto style="display: block; margin: auto;" width= 60%><br>
+
+    <br>For example, you can make greeting cards that cater to C-level executives wanting to thank their senior vice presidents for making profitable decisions last year. Or you can target healthcare professionals who want to thank their patients for choosing their clinic. For designing the cards, you can use an online graphic tool like Photoshop or Canva. </p></div>
+
+<div id="12. Become a TikTok consultant">
+  <p3>12. Become a TikTok consutant</p3>
+  <p> Brands will contact you for brainstorming video ideas, developing engaging bios, and more. It’s the perfect money-making opportunity for digital nomads—you can run the entire business from your smartphone. Compared to Instagram, TikTok is relatively new and untapped, so helping brands establish a solid presence on the app can potentially make you a fortune.<br>
+
+
+<img src="Blog make money online- TIKTOK CONSULATANT.jpg" height=auto style="display: block; margin: auto;" width= 60%><br>
+
+    <br>However, you need to have a few talents before you begin offering TikTok consultancy to businesses. The most important is knowing how to create viral videos that get people to engage with brands. If you don’t have the expertise to drive sales through this platform, you can still learn how to attract customers by taking this @@TikTok course.</p></div>
+
+<div id="13. Do a part-time job">
+  <p3>13. Do a part-time job</p3>
+  <p>You can browse part-time jobs on Indeed or a niche job board that caters to your field.<br>
+
+    <img src="Blog make money online-PARTTIME .jpg" height=auto style="display: block; margin: auto;" width= 60%>
+
+<br>Some job websites require an upfront fee to register, so read the fine print carefully. Most sites let you filter for part-time and contract-based jobs, so you should have no problem finding relevant positions to apply for. With many companies hiring part-time, it’s easier than ever to make extra money without working a full week.</p></div><hr>
+
+<div id="14. Sell clothes online">
+  <p3>14. Sell clothes online</p3>
+  <p>Have clothes you don’t wear anymore? Rather than letting them sit in your closet, sell them online. There are quite a few websites that let you sell apparel for cash, such as Poshmark, Refashioner, ThredUp, and Tradesy.<br>
+
+<br>You can also explore Facebook buy and sell groups in your community to find people online and sell the items in person. Just be careful of scams and follow the recommended safety precautions.
+</p></div><hr>
+
+<img src="Blog make money online- PHOTOGSPHY.jpg" height=auto style="display: block; margin: auto;" width= 60%>
+
+<div id="15. Sell photography">
+  <p3>15. Sell photography</p3>
+  <p>Whether you’re a professional photographer or just love snapping great pictures, you can make money online by selling your images. Sites like Shutterstock and Alamy are great places to showcase your work. These websites pay royalties to photographers when someone downloads a copy of their image.<br>
+
+<br>If you’re looking to monetize your photography quickly, you can create a listing on Foap, a smartphone app that lets you upload your works and earn cash. When an agency, brand, or anyone else buys a photo or video from your digital Foap portfolio, the app creator shares the profit with you 50/50. </p></div>
+
+<div id="16. Stocks investing">
+<p3>16. Stocks investing</div>
+  <p>Investing in stocks can be a way to make money quickly, but it’s not without risk, especially if you’re inexperienced. While the rewards can be high, you might also face losses.<br>
+<br><img src="Blog make money online- STOCKS INVESTING.jpeg" height=auto style="display: block; margin: auto;" width= 60%>
+
+
+
+
+<br>If you have a 9-to-5 job, consider exploring your company’s financial programs. Does it allow investment in company stocks? If so, this could be an option. With company stock programs, your role as an employee may influence the organization’s success. Additionally, if your company offers an RRSP matching program, consider this as a way to save for retirement or a down payment on a home.
+</p></p3>
+
+
+<hr>
+<p><a href="#top">Go to top</a></p>
+<hr>
+
+
+<div id="17. Become a virtual assistant">
+  <p3>17. Become a virtual assistant</p3>
+  <p>As entrepreneurs build more businesses, the demand for virtual assistants grows. A virtual assistant is a self-employed individual providing various services remotely, such as writing, bookkeeping, social media management, and customer support.
+<br>
+
+<img src="Blog make money online-VIRTUAAL AASSISTNT.png" height=auto style="display: block; margin: auto;" width= 60%>
+
+<br>Find virtual assistant gigs on sites like Virtual Office Temps, Indeed, or Upwork. Many have also succeeded by directly reaching out to brands and entrepreneurs. Combining job postings and proactive outreach could land your first client sooner than expected.</p></div>
+
+<div id="18. Online Tutoring">
+  <p3>18. Online Tutoring</p3>
+  <p>If you want to make money online on your own schedule, consider becoming an online tutor. Studenomics covered a story of a person who made $2,100 in one semester from tutoring. Interestingly, he built up his client base through word of mouth, visibility, and great group rates.<br>
+<br>If you have a teaching degree, you may be more likely to land a tutoring position. Having a degree or experience in the subject you’re tutoring is essential for this type of job. If you’ve spoken at a conference or event about the topic, you might also be considered for an online tutoring, teaching, or mentoring position.<br>
+
+<br>While sciences and math often have a high demand for tutoring positions, you’ll also find English popular among international audiences. If you’re an expert on a topic, tutoring may be the right platform for you to make money fast.<br>
+
+<br>You can find online tutoring jobs on platforms such as:
+
+@@Tutor.com
+@@Yup
+@@Cambly<br>
+
+<div id="19. Become a translator">
+  <p3>19. Become a translator</p3>
+<p>Translation is a fairly underserved niche, meaning there’s less competition in this field than in other niche markets. To capitalize on the opportunity, you need to be fluent in at least two languages. If you’re bilingual or majored in a popular language in school, this may be a great money-making idea for you to try out.<br>
+
+
+<img src="Blog make money online-TRANSLATOR.jpeg" height=auto style="display: block; margin: auto;" width= 60%>
+
+
+
+<br>You will need to show proof of your ability to translate without using machine translation tools. If you have a language degree or experience translating text, make sure to highlight that in your portfolio or résumé. Most companies will require a translation test, and you can’t use translation tools at any time to help you pass the test.<br>
+
+<br>Sites where you can find translation jobs to make money online include:
+
+@@Upwork
+@@Gengo
+@@Protranslating
+@@Translators Base</p></div>
+
+<div id="20. Online writing">
+  <p3>20. Online writing</p3>
+  <p>With a growing interest in content marketing, more and more companies are looking for writers who can fill their web properties with great content. The secret to succeeding as a writer is to focus on a specific niche. Many writers try to be generalists, covering everything from food to tech. However, a niche focus sets you apart.<br>
+
+<br>What about AI replacing human writers? While AI can generate content, it lacks the human touch. As a writer, your experience in a niche adds value. You can offer thoughts, experiences, and insider perspectives. That’s what brands want. That’s what they pay for.
+<br>
+<img src="Blog make money online-ONLINE WRITING.jpeg " height=auto style="display: block; margin: auto;" width= 60%>
+<br>
+<br>When applying for writing jobs, be specific. Send relevant samples. If asked for a marketing piece, send one. Don’t send a finance article. Or a fitness one. Why? Hiring managers need to see your understanding of the niche.<br>
+
+<br>Sites for finding freelance writing jobs include:<br>
+
+@@Problogger
+@@Craigslist
+@@BloggingPro
+@@Mediabistro
+@@FlexJobs
+@@Be a Freelance Blogger</p></div>
+
+<div id="21. Become an influencer">
+  <p3>21. Become an influencer</p3>
+  <p>Building a personal brand can also help you make money online. Soccer star Cristiano Ronaldo charges more than $2 million for a sponsored Instagram post, for example. While it may seem like reality stars, singers, and athletes are the biggest influencers, keep in mind that even smaller-scale influencers can make more money today than they did a few years back.<br>
+
+<br>\To become an influencer, you need to build a healthy following. The best platforms to get started on? Instagram and TikTok. Some of the biggest non-celebrity influencers often gained their first taste of exposure on these platforms. You might want to check out how to get more Instagram followers if you want to build a big Instagram audience.<br>
+
+<br>To make money as an influencer, you can charge for sponsored posts, add affiliate links in your bio, sell your photos, sell ads on your own podcast, make and sell merch, get paid to appear at events, and more.</p></div>
+
+
+<p3>Start your online earning journey today</p3>
+<p>Making money online can help you stay afloat during these troubled times, but it can also help you escape your 9-to-5 job so you can become a full-time entrepreneur. By brainstorming online business ideas and choosing to start an online business, you gain more financial freedom, improve your financial security, and inch closer to living life on your terms.<br>
+
+<br>It really is possible to earn a living online if you work hard and stick with it. So, which money-making idea will you pursue first? plz comment bemow in the contact us section</p><br>
+
+
+
+<p><a href="#top">Go to top</a></p>
+
+
+
+
+
+
+
+<hr>
+<div class="contact">
+  <div style="text-align:center">
+    <div id="Contact Us">
+
+<!-- banner section  -->
+    <section class="banner">
+        <img src=
+"CONTACT US BANNERimage.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        We are here to answer any questions you may have.
+    </section></div></div></div>
+ 
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <p>Your Details</p>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <h6>
+ <div class="w3-black w3-center w3-padding-24">Powered by FFDBC &copy; all rights reserved</a></div>
+ <div class="w3-black w3-center w3-padding-24">Developed by<a href="https://www.linkedin.com/in/peter-haro-23a627230" title="peter haro" target="_blank" class="w3-hover-opacity"> Peter Haro</a></div>
+</h6>

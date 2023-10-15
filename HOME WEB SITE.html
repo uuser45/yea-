@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME WEB</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style> 
+
+body {
+  text-align: center;
+}
+
+h {
+  padding: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+p {
+  font-size: 20px;
+  padding: 30px;
+  color: black;
+}
+
+
+
+h3 {
+  color: black;
+  font-size: 80PX;
+}
+
+p1 {
+  color: blue;
+  font-size: 30px;
+   text-align: center;}
+
+
+h1 {
+  padding: 0px;
+  color: darkgoldenrod;
+  text-align: center;
+}   
+
+h2 {
+
+    color: black;
+    font-size: 50px;
+    top: 0;}
+
+
+h6 {
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+  padding: px;
+  margin: 0px;
+}
+
+
+
+
+h7 {
+  font-style: italic;
+  color: red;
+  font-size: 20px;
+}
+
+
+
+div {
+  text-align: center;
+  padding: 30px;
+}
+
+
+body {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+
+
+
+
+.logo {
+      /* This creates a class for the logo image */
+      width: 100px;
+      height: 100px;
+      margin-top: 1px;
+      margin: px;
+      float: left; /* This aligns the logo image to the left side of the header */
+    }
+
+
+
+.top-container {
+  background-color: skyblue;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 12px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for  buttons */
+#my-button {
+  background-color: skyblue;
+  color: black;
+  padding: 14px 20px ;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 40%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: gb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 95%; /* Could be more or less, depending on screen size */
+  padding: 12px 50px;
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: indianred;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 80%;
+     background-color: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/**** STYLE HEADER  ****/
+/* Style the header with a grey background and some padding */
+
+ .header {
+  overflow: hidden;
+  background-color: skyblue;
+  padding: 0px 0px;
+}
+
+/* Style the header links */
+.header a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: px;
+  border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header {
+  float: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+
+
+
+/** contact page**/
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: darkgray;
+}
+ 
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+ 
+
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+ 
+/* Footer styles */
+p20 {
+    padding: 20px;
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+}
+
+
+
+
+
+
+.box1 {
+  width: 100%;
+  border: 5px solid #a1a1a1;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.box-content {
+  padding: 10px;
+}
+
+.box-image {
+  width: 40%;
+  display: inline-block;
+}
+
+.box-image .wrap {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.box-image img {
+  width: 100%;
+}
+
+.box-text {
+  display: inline-block;
+  text-align: justify;
+  font-size: 20px;
+  vertical-align: top;
+  width: 95%;
+}
+
+.box-text .wrap {
+  padding: 5px;
+}
+
+.box-footer {
+  padding: 10px;
+  border-top: 4px solid #a1a1a1;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+
+
+
+
+ 
+ 
+</style></head>
+<body>
+ 
+
+
+<body style="background-color:lightgray;">
+
+<div class="top-container1">
+  <h>FUTURE'S FINANCE, DATA&nbsp; AND BUSINESS CONSULTANCY</h>
+  <P>Excellence in service, innovation</p>
+  
+</div>
+
+<div class="header" id="myHeader">
+  <!-- This is the header section where you can add your logo and company name -->
+    <img src="https://th.bing.com/th/id/OIG.PtHbC0Ma5X48QbkSixjK?pid=ImgGn" alt="My company logo" class="logo" /> <!-- This adds the logo image with the class "logo" -->
+   <div class="header">
+   <a  href="FFDBC HOME.html"> FFDBC Home</a>
+    <a href="FFDBC ABOUT.html">About Us</a>
+    <a href="FFDBC SERVICES.html">Services</a>
+   <a href="#Contact Us">Contact Us</a>
+
+
+
+    <a><button id="my-button" onclick="document.getElementById('my-popup').style.display='block'" style="width:auto;">Opt In</button></a>
+
+<div id="my-popup" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('my-popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <br><label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <br><label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <br><button type="submit">Opt In</button><br>
+
+      <br><label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+       <p>By Opting In you agree to our <a href="#" style="color:dodgerblue"><br>Terms & Privacy</a>.</p>
+
+    </div>
+
+    <div class="container2" style="background-color: none">
+      <button type="button" onclick="document.getElementById('my-popup').style.display='none'"class="cancelbtn">Cancel</button><br>
+
+      <br><span class="psw"> <a href="#">forgot password?</a></span>
+    </div>
+  </form>
+</div>
+     <a href="HOME WEB SITE.html">Blogs</a>
+
+
+     <a href="PETER HARO'S PORTFOLIO.html">P. Haro's Portfolio</a>
+
+<script>
+// Get the modal
+var modal = document.getElementById('my-popup');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script></div></div></P></div></body></html>
+
+
+
+
+
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="box1">
+  <div class="box-content">
+
+    <div class="box-image">
+      <div class="wrap">
+        <img src="https://media.licdn.com/dms/image/D4D03AQF2runlCMP54Q/profile-displayphoto-shrink_800_800/0/1685006898447?e=1702512000&v=beta&t=qYf7zgz6sOFYZ_hZANBcrLeEjvBcouHwx2TTXJWG72c" />
+      </div>
+    </div>
+
+    <div class="box-text">
+      <div class="wrap">
+        Hello, my name is Peter Haro and I am a professional business and data analyst. I have a background in mathematics and statistics. I am also a part time web developer and designer based in Nairobi, Kenya. I have been creating websites for over 2 months, using various tools and technologies such as HTML, CSS, JavaScript and Google Sites. I enjoy making websites that are responsive, user-friendly and visually appealing.
+      </div>
+    </div>
+
+  </div>
+  <div class="box-footer">
+    <div class="wrap">
+     <h2> Welcome to peter haro's personal blog  webpage</h2>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<HR>
+<h2>My Published Webpages</h2>
+<p1>Here are some of the websites that I have created and published online: You can click on the links to view them in full.</p>
+
+
+
+
+
+<!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/34/87/82/distant-relatives-ecolodge.jpg?w=500&h=300&s=1" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a href="THINGS TO DO IN KILIFI COUNTY FFDBC BLOG.html">Best Things To Do in Kilifi County</a></b></p>
+        <p>     .... </p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.developmentblogs.org/wp-content/uploads/2019/11/MAKE-MONEY-ONLINE-.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a href ="HOW TO MAKE MONEY ONLINE FFDBC BLOG.html">How to make Money Online from Home</a></b></p>
+        <p>.....   </p></details>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container">
+      <img src="https://www.tourismupdate.co.za/sites/default/files/styles/article-large/public/images/article/201902/kenya-prioritises-beach-destinations-tourism-growth.jpg?itok=DKwkGUAc" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a href="COASTAL CULTURE BLOG FDBC.html">The Coast Of Kenya</a></b></p>
+        <p> .....</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://dkemhji6i1k0x.cloudfront.net/000_clients/1173889/page/1173889ScmnvMok.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a  href="BEST  HOSTELS IN NAIROBI FFDBC BLOG .html"> Best Hostels in Nairobi</a></b></p>
+        <p>.....</p>
+      </div>
+    </div>
+
+
+
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://th.bing.com/th/id/OIG.PtHbC0Ma5X48QbkSixjK?pid=ImgGn" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b><a  href="FFDBC HOME.html"> FFDBC company website</a></b></p>
+        <p>....</p>
+      </div>
+    </div>
+
+    <div class="w3-third w3-container">
+      <img src="https://pointerasia.com/wp-content/uploads/2021/05/1591900317-GettyImages-1137516784-1024x682.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Real Estate </b></p>
+        <p>Here is one project i created on how to invest in real estate</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ 
+ <HR>   
+<h2>Testimonials</h2>
+<p1>Here are some feedback I have received from clients and collaborators: You can click on each one of them to read the full reviews.</p1>
+      <ul> <li> <details><summary><p3>Jane Smith, CEO of  Jasmi Holdings</p3></summary><p>" Peter is a creative and passionate web designer who made our website look amazing and engaging.He was very responsive and flexible throughout the project. He has also provided us with valuable suggestions and tips on how to improve our website. We are impressed with his work and would hire him again."</p> </details></li>
+
+    <li><details><summary><p3>Lisa K, Organiser of LMN Event.</p3></summary><p>"P. Haro a skilled and reliable web developer who helped us create a website for our event. He was very attentive to details and delivered a high-quality website that met our expectations. He also offered us ongoing support and maintenance after the project was completed. He is a great partner to work with."</p></details></li>
+    <li><details><summary><p3>Maryamu Kitsao, Content Creator</p3></summary><P> "Haro is a talented and professional web developer who delivered our website on time and within budget. He was easy to communicate with and understood our requirements well. We are very happy with the result and would recommend him to anyone who needs a website."</P></details></li></ul><br>
+
+<p>If you are interested in working with me or have any questions or comments about my websites, please feel free to contact me below. THANKS FOR VISITING MY WEBPAGE</p>
+
+
+<p><a href="#top">Go to top</a></p>
+
+
+
+<hr>
+
+
+
+<div class="contact">
+  <div style="text-align:center">
+    <div id="Contact Us">
+
+<!-- banner section  -->
+    <section class="banner">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        We are here to answer any questions you may have.
+    </section></div></div></div>
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <p>Your Details</p>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+ 
+
+<h6>
+ <div class="w3-black w3-center w3-padding-24">Powered by FFDBC &copy; all rights reserved</a></div>
+ <div class="w3-black w3-center w3-padding-24">Developed by<a href="https://www.linkedin.com/in/peter-haro-23a627230" title="peter haro" target="_blank" class="w3-hover-opacity"> Peter Haro</a></div>
+</h6>
+
+
+</div></P1>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
